@@ -1,0 +1,131 @@
+.about {
+  padding: 140px 0px;
+  background: #fff;
+  position: relative;
+  &__title {
+    max-width: 735px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__questions {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 216px;
+    margin-bottom: 120px;
+  }
+  &__question {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__title {
+    margin-top: 40px;
+  }
+  &__quote {
+    background: $bg1;
+    &__wapper {
+      padding-top: 40px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 60px;
+    }
+    &__heading {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 51.31px;
+      margin: 0 auto;
+      width: 680px;
+      text-align: center;
+      text-align: center;
+    }
+  }
+  &__user {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__info {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+    }
+    &__Social {
+      display: flex;
+      img {
+        margin-right: 8px;
+      }
+    }
+    padding-bottom: 40px;
+  }
+  &__name {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 160%;
+    font-family: "Montserrat Alternates";
+  }
+  &__boxAvatar {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  /* PC Điện thoại nhỏ hơn 539px */
+  .about {
+    &__questions {
+      margin-top: 100px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px 0;
+      margin-bottom: 120px;
+    }
+    &__quote__heading {
+      width: auto;
+    }
+    &__user {
+      flex-wrap: wrap;
+      &__info {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 719px) {
+  /* Điện thoại màn hình lớn thua IPAD */
+  .about {
+    &__questions {
+      margin-top: 100px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px 0;
+      margin-bottom: 120px;
+    }
+    &__quote__heading {
+      width: auto;
+    }
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+  /* IPAD  */
+  .about {
+    &__questions {
+      margin-top: 100px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px 0;
+      margin-bottom: 120px;
+    }
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1139px) {
+}
+@media only screen and (min-width: 1140px) and (max-width: 1319px) {
+  /* PC lớn hơn 1200px */
+}
+@media only screen and (min-width: 1320px) {
+}

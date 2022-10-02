@@ -1,0 +1,140 @@
+.pricing {
+  padding: 140px 0px;
+  position: relative;
+  &__list {
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  &__item {
+    cursor: pointer;
+    &.active,
+    &:hover {
+      .pricing__info,
+      .pricing__content {
+        border: 1.5px solid #cd4631;
+        background: $bg1;
+      }
+      .pricing__title span {
+        display: block;
+      }
+    }
+  }
+  &__info,
+  &__content {
+    padding: 60px 40px 30px 40px;
+    background: #fff;
+    border: 1.5px solid #000000;
+    border-radius: 8px;
+  }
+  &__title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 36.65px;
+    line-height: 140%;
+    align-items: center;
+    margin-bottom: 20px;
+    & span {
+      display: block;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 160%;
+      padding: 3px 6px;
+      background: #cd4631;
+      color: #fff;
+      border: 1px solid #cd4631;
+      border-radius: 4px;
+      display: none;
+    }
+  }
+  &__desc {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    color: $gray;
+    margin-bottom: 90px;
+  }
+  &__boxBtn {
+    display: flex;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__money {
+    font-weight: 700;
+    font-size: 22.65px;
+    line-height: 140%;
+    color: $primary;
+  }
+  &__month {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 160%;
+    color: $gray;
+  }
+  &__content {
+    padding-top: 40px;
+    margin-top: 20px;
+    min-height: 312px;
+    &__title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 160%;
+      color: $gray;
+    }
+    &__list {
+      margin-top: 20px;
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        margin-bottom: 10px;
+        &.item--bold {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  /* PC Điện thoại nhỏ hơn 539px */
+  .pricing {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      // gap: 20px ;
+    }
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 719px) {
+  /* Điện thoại màn hình lớn thua IPAD */
+  .pricing {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      // gap: 20px ;
+    }
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+  /* IPAD  */
+  .pricing {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      // gap: 20px ;
+    }
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1139px) {
+  /* IPAD Pro */
+  .pricing {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      // gap: 20px ;
+    }
+  }
+}

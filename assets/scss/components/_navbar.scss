@@ -1,0 +1,73 @@
+.navbar {
+  margin-top: 64px;
+  display: block;
+  text-align: center;
+  &__titile {
+    font-size: 96px;
+    line-height: 96px;
+    font-weight: 700;
+  }
+  span {
+    display: block;
+    color: $primary;
+  }
+  &__desc {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+  &__button {
+    width: 184px;
+    margin-bottom: 120px;
+    height: 65px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 539px) {
+  /* PC Điện thoại nhỏ hơn 539px */
+  .navbar {
+    &__titile {
+      font-size: 60px;
+      line-height: 60px;
+      font-weight: 700;
+    }
+    &__desc {
+      padding-top: 40px;
+      padding-bottom: 60px;
+      font-size: 15px;
+      width: 300px;
+      margin: 0 auto;
+    }
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 719px) {
+  /* Điện thoại màn hình lớn thua IPAD */
+  .navbar {
+    &__titile {
+      font-size: 60px;
+      line-height: 60px;
+      font-weight: 700;
+    }
+    &__desc {
+      padding-top: 40px;
+      padding-bottom: 60px;
+      font-size: 15px;
+      width: 300px;
+      margin: 0 auto;
+    }
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+  /* IPAD  */
+}
+@media only screen and (min-width: 960px) and (max-width: 1139px) {
+  /* IPAD Pro */
+}
+@media only screen and (min-width: 1140px) and (max-width: 1319px) {
+  /* PC lớn hơn 1200px */
+}
+@media only screen and (min-width: 1320px) {
+}

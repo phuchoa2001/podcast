@@ -1,0 +1,53 @@
+.episode {
+  padding: 140px 0px;
+  &__titleSubMenu {
+    margin-bottom: 100px;
+  }
+  &__tabs {
+    display: flex;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $gray;
+    margin-bottom: 100px;
+  }
+  &__tab {
+    padding: 8px 16px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    &.active,
+    &:hover {
+      color: $primary;
+      font-weight: 700;
+    }
+  }
+}
+.tab-pane {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+@media only screen and (max-width: 539px) {
+  /* PC Điện thoại nhỏ hơn 539px */
+  .episode {
+    &__tabs {
+      flex-wrap: wrap;
+    }
+    &__tab {
+      width: unset;
+      padding: 16px;
+    }
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 719px) {
+  /* Điện thoại màn hình lớn thua IPAD */
+  .episode {
+    &__tabs {
+      flex-wrap: wrap;
+    }
+    &__tab {
+      width: unset;
+      padding: 16px;
+    }
+  }
+}

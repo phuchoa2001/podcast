@@ -1,0 +1,83 @@
+.sponsor {
+  padding: 140px 0px;
+  padding-bottom: 248px;
+  background: $bg1;
+  &__text {
+    margin-bottom: 100px;
+  }
+  &__item {
+    padding: 17px;
+    background: #ffffff;
+    border: 1.61321px solid #000000;
+    border-radius: 12px;
+    &__text {
+      text-align: center;
+      font-weight: 400;
+      margin-bottom: 13px;
+      font-size: 14px;
+      line-height: 160%;
+      color: $gray;
+      width: 440px;
+      margin: auto;
+    }
+  }
+  &__BoxImage {
+    width: 354.91px;
+    margin: 0px auto;
+    margin-top: 26px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $gray;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  display: flex;
+}
+.slick-initialized .slick-slide {
+  margin-right: 20px;
+}
+.slick-arrow {
+  position: absolute;
+  bottom: -100px;
+  cursor: pointer;
+  z-index: 99;
+}
+.left {
+  left: 0;
+}
+.right {
+  left: 68px;
+}
+@media only screen and (max-width: 539px) {
+  /* PC Điện thoại nhỏ hơn 539px */
+  .sponsor {
+    &__item {
+      &__text {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 719px) {
+  /* Điện thoại màn hình lớn thua IPAD */
+  .sponsor {
+    &__item {
+      &__text {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+  /* IPAD  */
+  .sponsor {
+    &__item {
+      &__text {
+        width: 100%;
+      }
+    }
+  }
+}

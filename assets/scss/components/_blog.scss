@@ -1,0 +1,130 @@
+.blog {
+  padding: 140px 0px;
+  position: relative;
+  &__list {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 20px;
+    margin-bottom: 100px;
+  }
+  &__item {
+    padding: 16px;
+    background: #fff;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    &--shadow {
+      box-shadow: 10px 10px 0px #000000;
+    }
+  }
+  &__tag {
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 160%;
+    color: &gray;
+  }
+  &__title {
+    margin-top: 6px;
+    font-weight: 700;
+    font-size: 36.65px;
+    line-height: 140%;
+    color: $primary;
+  }
+  &__desc {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    padding-bottom: 26px;
+    border-bottom: 1px solid $gray;
+  }
+  &__footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__time {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 160%;
+    color: $gray;
+  }
+  &__BoxHref {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  /* PC Điện thoại nhỏ hơn 539px */
+  .blog {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px 0px;
+    }
+    &__item {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; 
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 719px) {
+  /* Điện thoại màn hình lớn thua IPAD */
+  .blog {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px 0px;
+    }
+    &__item {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; 
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+  /* IPAD  */
+  .blog {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px 0px;
+    }
+    &__item {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1139px) {
+  /* IPAD Pro */
+  .blog {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px 0px;
+    }
+    &__item {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+@media only screen and (min-width: 1140px) and (max-width: 1319px) {
+  /* PC lớn hơn 1200px */
+}
+@media only screen and (min-width: 1320px) {
+}

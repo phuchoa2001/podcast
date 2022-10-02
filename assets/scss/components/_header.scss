@@ -1,0 +1,356 @@
+.header {
+  background: $bg1;
+  height: auto;
+  &__wrapper {
+    padding-top: 24px;
+    width: 100%;
+  }
+  &__left {
+    display: flex;
+    justify-content: space-between;
+    max-width: 510px;
+    align-items: center;
+  }
+  &__logo {
+    margin-right: 123px;
+  }
+  &__menu ul {
+    display: flex;
+    & li {
+      padding: 0px 30px;
+      cursor: pointer;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+  &__navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+  }
+  &__right {
+    display: flex;
+  }
+  &__SUBSCRIBE {
+    margin-left: 20px;
+  }
+  &__covers {
+    margin-top: 120px;
+    display: flex;
+    & .cover {
+      margin-right: 20px;
+      transition: 0.5s all;
+    }
+    & .cover:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__platform {
+    &__Social {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    &__Boximg {
+      margin-right: 20px;
+    }
+    &__Boximg:last-child {
+      margin-right: 0px;
+    }
+    &__wrapper {
+      margin-top: 120px;
+      padding: 20px 0px;
+      border-top: 1px solid #4d4d4d;
+      border-bottom: 1px solid #4d4d4d;
+      height: 84px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    padding-bottom: 140px;
+  }
+}
+.container__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__Boximg img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  /* PC Điện thoại nhỏ hơn 539px */
+  .header {
+    &__navbar {
+      position: fixed;
+      top: 0px;
+      right: -100%;
+      background: #fff;
+      display: block;
+      height: 100vh;
+      transition: 500ms ease;
+    }
+    &__menu ul {
+      display: block;
+      & li {
+        width: 100%;
+        padding: 20px 10px;
+      }
+    }
+    &__delete {
+      margin-top: 10px;
+      width: 100%;
+      padding: 0px 10px;
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__delete img {
+      height: 24px;
+    }
+    &__right {
+      padding: 20px 10px;
+    }
+    &__left {
+      max-width: 100%;
+      width: 100%;
+    }
+    &__MenuMobile {
+      margin-right: 20px;
+    }
+    &__covers {
+      margin: 0px 10px;
+      margin-top: 50px;
+      width: calc(100% - 20px);
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px 10px;
+      & .cover:nth-child(1),
+      & .cover:nth-child(5) {
+        display: none;
+      }
+      .cover img {
+        width: 100%;
+      }
+    }
+    &__platform {
+      &__Boximg {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+      &__Social {
+        justify-content: center;
+        margin-top: 40px;
+        flex-wrap: wrap;
+        display: flex;
+      }
+      h3 {
+        text-align: center;
+        width: 100%;
+      }
+      &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        height: auto;
+        justify-content: center;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 719px) {
+  /* Điện thoại màn hình lớn thua IPAD */
+  .header {
+    &__navbar {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      background: #fff;
+      display: block;
+      height: 100vh;
+      transition: 500ms ease;
+    }
+    &__menu ul {
+      display: block;
+      & li {
+        width: 100%;
+        padding: 20px 10px;
+      }
+    }
+    &__delete {
+      margin-top: 10px;
+      width: 100%;
+      padding: 0px 10px;
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__delete img {
+      height: 30px;
+    }
+    &__right {
+      padding: 20px 10px;
+    }
+    &__left {
+      max-width: 100%;
+      width: 100%;
+    }
+    &__MenuMobile {
+      margin-right: 20px;
+    }
+    &__covers {
+      margin: 0px 10px;
+      margin-top: 20px;
+      width: calc(100% - 20px);
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px 10px;
+      & .cover:nth-child(1),
+      & .cover:nth-child(5) {
+        display: none;
+      }
+      .cover img {
+        width: 100%;
+      }
+    }
+    &__platform {
+      &__Boximg {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+      &__Social {
+        justify-content: center;
+        margin-top: 40px;
+        flex-wrap: wrap;
+        display: flex;
+      }
+      h3 {
+        text-align: center;
+        width: 100%;
+      }
+      &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        height: auto;
+        justify-content: center;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+  /* IPAD  */
+  .header {
+    &__navbar {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      background: #fff;
+      display: block;
+      height: 100vh;
+      transition: 500ms ease;
+    }
+    &__menu ul {
+      display: block;
+      & li {
+        width: 100%;
+        padding: 20px 10px;
+      }
+    }
+    &__delete {
+      margin-top: 10px;
+      width: 100%;
+      padding: 0px 10px;
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__delete img {
+      height: 30px;
+    }
+    &__right {
+      padding: 20px 10px;
+    }
+    &__left {
+      max-width: 100%;
+      width: 100%;
+    }
+    &__MenuMobile {
+      margin-right: 20px;
+    }
+    &__covers {
+      display: flex;
+      justify-content: center;
+      & .cover:nth-child(4) {
+        margin-right: 0px;
+      }
+      & .cover:nth-child(1),
+      & .cover:nth-child(5) {
+        display: none;
+      }
+      .cover {
+        width: 100%;
+      }
+      .cover img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1139px) {
+  /* IPAD Pro */
+  .header {
+    &__MenuMobile {
+      display: none;
+    }
+    &__delete {
+      display: none;
+    }
+    &__navbar {
+      justify-content: flex-end;
+    }
+    &__covers {
+      justify-content: center;
+      & .cover:nth-child(1),
+      & .cover:nth-child(5) {
+        display: none;
+      }
+      .cover {
+        width: 30%;
+      }
+      .cover img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1140px) and (max-width: 1319px) {
+  /* PC lớn hơn 1200px */
+  .header {
+    &__MenuMobile {
+      display: none;
+    }
+    &__delete {
+      display: none;
+    }
+  }
+}
+@media only screen and (min-width: 1320px) {
+  .header {
+    &__MenuMobile {
+      display: none;
+    }
+    &__delete {
+      display: none;
+    }
+  }
+}

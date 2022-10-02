@@ -1,0 +1,204 @@
+.about {
+  padding: 140px 0px;
+  &__heading {
+    margin-bottom: 32px;
+  }
+  &__image {
+    margin-bottom: 60px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 36.65px;
+    line-height: 140%;
+    text-align: center;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px 20px;
+    margin-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 0.5px solid $gray;
+  }
+  &__item {
+    color: $gray;
+    & p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+    }
+    & p:nth-child(1) {
+      margin-bottom: 50px;
+    }
+    & a {
+      border-bottom: 1px solid #333;
+      line-height: 1;
+      font-weight: 600;
+    }
+    & .bold {
+      font-weight: bold;
+    }
+  }
+  &__blog {
+    &__title {
+      font-weight: 700;
+      font-size: 36.65px;
+      line-height: 140%;
+      margin-top: 100px;
+      text-align: center;
+      margin-bottom: 80px;
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0px 20px;
+    }
+    &__item {
+      border: 2px solid #000000;
+      box-shadow: 10px 10px 0px #000000;
+      background: #fff;
+      padding: 16px;
+      display: flex;
+      border-radius: 8px;
+    }
+    &__left {
+      img {
+        height: 448px;
+      }
+    }
+    &__right {
+      &__BoxImage {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+      }
+      &__image {
+        height: 130px;
+      }
+      &__info {
+        margin-top: 0px;
+        margin-left: 20px;
+        padding-bottom: 20px;
+        border-bottom: 0.5px solid $gray;
+      }
+      &__number {
+        margin-top: 120px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22.4px;
+        margin-bottom: 6px;
+      }
+      &__title {
+        font-weight: 700;
+        font-size: 36.65px;
+        line-height: 100%;
+        margin-bottom: 20px;
+      }
+      &__desc {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 160%;
+        color: $gray;
+      }
+      &__text {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 160%;
+        color: $gray;
+        padding-right: 19px;
+      }
+      &__bottom {
+        display: flex;
+        padding-top: 10px;
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 539px) {
+  /* PC Điện thoại nhỏ hơn 539px */
+  .about {
+    &__image {
+      width: 100%;
+    }
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px 0px;
+    }
+    &__blog {
+      &__list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px 0px;
+      }
+      &__item {
+        display: block;
+      }
+      &__left img {
+        width: 100%;
+        height: auto;
+      }
+      &__right {
+        &__number {
+          margin-top: 20px;
+        }
+        &__BoxImage {
+          justify-content: flex-start;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 719px) {
+  /* Điện thoại màn hình lớn thua IPAD */
+  .about {
+    &__image {
+      width: 100%;
+    }
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px 0px;
+    }
+    &__blog {
+      &__list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px 0px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+  /* IPAD  */
+  .about {
+    &__image {
+      width: 100%;
+    }
+    &__blog {
+      &__list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px 0px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1139px) {
+  /* IPAD Pro */
+  .about {
+    &__image {
+      width: 100%;
+    }
+    &__blog {
+      &__list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px 0px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1140px) and (max-width: 1319px) {
+  /* PC lớn hơn 1200px */
+}
+@media only screen and (min-width: 1320px) {
+}

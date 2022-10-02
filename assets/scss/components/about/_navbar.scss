@@ -1,0 +1,22 @@
+.navbar {
+  &__Boxbtn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 140px;
+  }
+  &__desc {
+    line-height: 160%;
+    width: 770px;
+    color: $gray;
+  }
+  &__BoxDesc {
+    display: flex;
+    justify-content: center;
+  }
+  &__button {
+    display: flex;
+    width: auto;
+    margin: 0px;
+    margin-left: 20px;
+  }
+}
